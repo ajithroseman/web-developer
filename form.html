@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<a href="index.html">Home</a>
+<body class="bg">
+    <h3>Below content is example using form tag </h3>
+    <p>the example are for my testing purpose without using label in html and I also used various types of input like number text tadio email etc.<br>
+       You need to write all form content between &lt;form&gt;&lt;/form&gt;. where &lt;form&gt; is the opening tag and&lt;/form&gt;is the closing tag.</p>
+     <form>
+          <div>
+              What is your name: <input type="text">
+          </div>
+          <div>
+              Age: <input type="number" min="10" max="100">
+          </div>
+          <div>
+              hobby:<input type="text">
+          </div>
+          <div>
+              gender: <input type="radio"name="g">male <input type="radio"name="g">female
+          </div>
+          <div>
+              email:<input type="email">
+          </div>
+          <div>
+              <button>submit</button> &nbsp; <input type="reset">
+          </div>
+          <div>
+              <input type="submit">
+          </div>
+        </form>
+          <div>
+              <p>The above form is the easiest to me without using label, for =" ", id=" " and also name=" ". All those are  important and used by professional web developer.<br>
+                  Ok now lets discuss about the above example first thing that comes to mind is how is there two submit button let me explain the first submit button next to <br>
+                  reset button is built by <strong>&lt;button&gt;submit&lt;/button&gt;</strong> between the button i wrote submit you can write any name you want this is just to  show what name <br>
+                  should be inside the button. There is other submit button below the reset button  which is built by <strong>&lt;input type = "submit"&gt;</strong>both the code works this code is<br>
+                  common. If you chang type = "text" you can write text content for number you need to write number as type for email you should write email as type dont forget type="&nbsp;&nbsp;".<br>
+                  in gender line i used <strong> &lt;input type="radio"name="g"&gt; male &lt;input type="radio"name="g"&gt; female</strong> if we use radio we need to make all the switching element<br>
+                  to same group. In above example i made male and  named it to g group similarly i made female and named to g group by this way if you can only choose one i.e male or female <br>
+                  you cannot select both. if you remove the group name that is writing type="radio" you can choose  male and female simultaniously which will not have meaning of gender.
+                </p>
+          </div>
+          <div>
+                <h3>How to write html form in porfesional way</h3>
+          </div>
+        <p>I will use the same above example and modify. </p>
+        <form>
+            
+            <div>
+                <label for="your_name"> What is your name: <input type="text"id="your_name"></label>
+            </div>
+            <div>
+                <label for="your_age">Age: <input type="number" min="10" max="100"id="your_age"></label>
+            </div>
+            <div>
+                <label for="your_hobby">hobby:<input type="text"id="your_hobby"></label>
+            </div>
+            <div>
+                <label for="your_gender">gender: <input type="radio"name="g">male <input type="radio"name="g">female</label>
+            </div>
+            <div>
+                <label for="your_email"> email:<input type="email"id="your_email"></label>
+            </div>
+            <div>
+                <button>submit</button> &nbsp; <input type="reset">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+          </form>
+     <p>In the above example I used label tag where if click the text its going to automatically move to the box you can type using keybord, I used <strong>&lt;label for="your_name"&gt;name:&lt;input type="text"id="your_name"&gt;</strong><br>
+        you can write any name but for ="" and id ="" should be same. In gender it was different i used label and also for ="any name" but did not write id=" " so what this does if i move my cursor on gender it will show as pointer where <br>
+        it will not change to I cursor and allow you to click even though you click it will not select male or female if you write id =" " its going to click.you can do expriments using html code i am just a beginner my code is going to <br>
+        look like basic . </p>
+      <form action="can use for server">
+    <div>
+        <label for="your_bike"> bike as of 2021 </label>
+          <select name="fav_bike" id="your_bike"> 
+            <option>TVS aparche 160 4v</option>
+            <option>yamaha r15v4</option>
+            <option>yamaha mt15</option>
+            <option>KTM RC200</option>
+          </select>        
+    </div>
+      </form>
+      <p>Above is an example of drop down menu and choosing option </p>
+</body>
+</html>
